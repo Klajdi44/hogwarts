@@ -111,18 +111,26 @@ function prepareObjects(jsonData) {
     const firstLetterMiddle = studentObjTrimmed.substring(firstSpace, firstSpace + 2);
 
     //TODO: find a way to fix the rest of name
-    const restMiddle = studentObjTrimmed.substring(firstSpace + 2, lastSpace);
+    const restMiddle = studentObjTrimmed.substring(firstSpace + 2);
     // console.log(restMiddle);
 
 
     const middleName = studentObjTrimmed.substring(firstSpace, lastSpace);
 
     const middleGlued = `${firstLetterMiddle.toUpperCase()}${restMiddle}`
-    // console.log(restMiddle);
+
+    //get last name
+  
+    //TODO: fix firstLetterLast
+    const firstLetterLast = studentObjTrimmed.substring(lastSpace)
+
+
+
+    console.log(studentObjTrimmed);
+
 
     student.name = `${glued}${middleGlued}`
 
-    console.log(restMiddle);
 
 
 
